@@ -1,0 +1,640 @@
+fileFormatVersion: 2
+guid: 6f3d5159c0c55cb47b2d89b073d16842
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gun fire_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1266
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253069016ca26d64181100a4115fc534
+      internalID: -1472590648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1265
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5009e6d267f0e714b914adae5f16954f
+      internalID: 469321701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_2
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1268
+        width: 63
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa668833f1a916488d85f0185e2c8d3
+      internalID: -403205962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_3
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1265
+        width: 71
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05a9b80871d69f48bd9482809e0461d
+      internalID: 560897009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_4
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1267
+        width: 46
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f26f552d9b06e44e944dcf2968f7d54
+      internalID: 739994426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_5
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1273
+        width: 72
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b257c8f7119614f8e348d11c06ba2f
+      internalID: -529309185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_6
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1249
+        width: 87
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bbefafcc64ad6449d1ab69f7db1258
+      internalID: -1334344638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_7
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1249
+        width: 92
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33d5233fbc69644fb1702bccd711c75
+      internalID: 665484756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 993
+        width: 304
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3606b5986c8b72c498ebed2f94d5d703
+      internalID: 731836733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_9
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 993
+        width: 314
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7838267d485aa1648b1394423dc23ca4
+      internalID: 1929723964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_11
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 994
+        width: 323
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57ea1f02c49a414a9e2e2ff8e2db278
+      internalID: 696920436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_13
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 987
+        width: 328
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cf403a0bf357244bb56990332a09dd
+      internalID: 744333125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_18
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 635
+        width: 206
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf0ce9ac13c97e45ba76f6f4843d7b6
+      internalID: -994912769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_21
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 564
+        width: 372
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4274e620864d44e40b4c7cb397361647
+      internalID: 31255925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_22
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 540
+        width: 359
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879b176f3d460f24397cfd7ce811c70e
+      internalID: -1747180254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_23
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 688
+        width: 114
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e199c8750d4d244a6dae168be460e3
+      internalID: -1442134295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_44
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 190
+        width: 373
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e92a304024cb840960ec96f81fc2f3
+      internalID: -1781329352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_56
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 293
+        width: 137
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c65f3952a0ab74b805a70ea053d973
+      internalID: 1790107828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_57
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 214
+        width: 323
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9996abda5621776449d9dafed58649e8
+      internalID: 1577030905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun fire_84
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 251
+        width: 231
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e833464fd70259438d82e970d0cc1db
+      internalID: 239349110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gun fire_38: -1070256259
+      gun fire_48: -14066226
+      gun fire_26: -304280896
+      gun fire_27: -226968945
+      gun fire_54: 217011254
+      gun fire_57: 1577030905
+      gun fire_61: 909092494
+      gun fire_65: -1341576285
+      gun fire_1: 469321701
+      gun fire_16: 420377654
+      gun fire_37: -502018525
+      gun fire_84: 239349110
+      gun fire_87: -1221071719
+      gun fire_2: -403205962
+      gun fire_23: -1442134295
+      gun fire_81: 1372728833
+      gun fire_96: -1900688189
+      gun fire_66: -1742111445
+      gun fire_62: 1147262265
+      gun fire_77: -1477209429
+      gun fire_4: 739994426
+      gun fire_6: -1334344638
+      gun fire_69: -1869102438
+      gun fire_47: -541105668
+      gun fire_79: -1334600095
+      gun fire_29: 1523346235
+      gun fire_56: 1790107828
+      gun fire_30: 1017164335
+      gun fire_88: -802654238
+      gun fire_92: -1403448604
+      gun fire_41: 287383724
+      gun fire_40: 1832688808
+      gun fire_13: 744333125
+      gun fire_64: -275300996
+      gun fire_71: 1135520067
+      gun fire_32: 933319016
+      gun fire_43: 1957796006
+      gun fire_82: 1571658733
+      gun fire_15: 1058766610
+      gun fire_49: 1905877541
+      gun fire_58: 1811147753
+      gun fire_60: 1194523597
+      gun fire_51: 960024084
+      gun fire_75: 1361307048
+      gun fire_44: -1781329352
+      gun fire_59: -2134731338
+      gun fire_18: -994912769
+      gun fire_3: 560897009
+      gun fire_91: 1237147477
+      gun fire_94: -562836741
+      gun fire_9: 1929723964
+      gun fire_12: 734536742
+      gun fire_72: 1660748088
+      gun fire_28: -131118198
+      gun fire_14: 560142839
+      gun fire_33: 2030601572
+      gun fire_83: 1142620564
+      gun fire_19: -1147166965
+      gun fire_35: 305625003
+      gun fire_55: -1250166292
+      gun fire_17: -1256917821
+      gun fire_53: 1445437526
+      gun fire_7: 665484756
+      gun fire_42: -1568955468
+      gun fire_50: 1708454075
+      gun fire_52: 2010470142
+      gun fire_73: 2057885344
+      gun fire_45: 138705632
+      gun fire_74: -337057953
+      gun fire_22: -1747180254
+      gun fire_8: 731836733
+      gun fire_21: 31255925
+      gun fire_63: -348317156
+      gun fire_68: 1891783469
+      gun fire_11: 696920436
+      gun fire_0: -1472590648
+      gun fire_70: -315429787
+      gun fire_5: -529309185
+      gun fire_34: -871629043
+      gun fire_31: -948307014
+      gun fire_67: 1913032484
+      gun fire_36: -731823736
+      gun fire_39: 1662208690
+      gun fire_85: -1559286643
+      gun fire_10: 609566913
+      gun fire_20: 1680201792
+      gun fire_89: 1672097441
+      gun fire_95: -1132877608
+      gun fire_76: 1154379890
+      gun fire_86: -2008297939
+      gun fire_93: -1618654357
+      gun fire_24: -903926509
+      gun fire_80: -999286244
+      gun fire_25: 2000281706
+      gun fire_46: 1988276593
+      gun fire_78: 983434752
+      gun fire_90: -1823890744
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
