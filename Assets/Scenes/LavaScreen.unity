@@ -240,6 +240,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bf6f0af29e082342acac2b9b29fa052, type: 3}
+--- !u!4 &14717457 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6828411141846667394, guid: 7affdec2bb1b5214684023d6276ffbe3, type: 3}
+  m_PrefabInstance: {fileID: 1772604332}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &17261117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -887,8 +892,9 @@ MonoBehaviour:
   vantoc: 7
   chamdat: 1
   hp: 100
-  gunTip: {fileID: 0}
-  bullet: {fileID: 0}
+  maxHealth: 100
+  gunTip: {fileID: 14717457}
+  bullet: {fileID: 3290810393872171188, guid: 66b3ddf277957444884c95ff12b8bf53, type: 3}
 --- !u!4 &525926314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6828411141423615543, guid: 7affdec2bb1b5214684023d6276ffbe3, type: 3}
@@ -9640,7 +9646,7 @@ SpriteRenderer:
   m_Size: {x: 0.53, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1092427008
