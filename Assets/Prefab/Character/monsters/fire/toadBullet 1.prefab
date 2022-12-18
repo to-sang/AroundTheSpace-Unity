@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4062366039454386412}
   - component: {fileID: 224837546637921023}
   - component: {fileID: 864572008342557151}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toadBullet 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.06
+  m_Time: 0.19
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.5
@@ -245,5 +245,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bbfe1f01ffcf3e4a9d06de6221557d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 8
   targetTag: Player

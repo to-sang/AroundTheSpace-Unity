@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Toad : MonoBehaviour
+public class Toad : MonoBehaviour,ICollisionHandler,IHitable
 {
     [SerializeField]
     private Animator animator;
@@ -14,29 +14,88 @@ public class Toad : MonoBehaviour
     [SerializeField]
     private Transform shootPoint;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Transform target;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private float attackCooldown;
 
+    private bool canAttack = true;
+
+    private float timeSinceAttack;
+
+    private void Update()
+    {
+        lookAtTarget();
+        attack();
+    }
     public void StopAttack()
     {
         animator.SetBool("attack", false);
     }
 
-    public void attack()
+    public void shoot()
     {
         GameObject go = Instantiate(toadbullet,shootPoint.position,Quaternion.identity);
 
         Vector3 direction = new Vector3(-transform.localScale.x, 0);
 
         go.GetComponent<Projectile>().Setup(direction);
+    }
+
+    private void attack()
+    {
+        if (!canAttack)
+        {
+            timeSinceAttack += Time.deltaTime;
+        }
+        if(timeSinceAttack >= attackCooldown)
+        {
+            canAttack = true;
+        }
+        if(canAttack && target !=null && Mathf.Abs(target.transform.position.y - transform.position.y) <= 1f)
+        {
+            canAttack=false;
+            timeSinceAttack = 0;
+            animator.SetBool("attack", true);
+        }
+
+    }
+
+    private void lookAtTarget()
+    {
+        if(target != null)
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = target.transform.position.x < transform.position.x ? 0.28f : -0.28f;
+
+            transform.localScale = scale;
+        }
+    }
+
+    public void CollisionEnter(string colliderName, GameObject other)
+    {
+        if (colliderName == "damageArea" && other.tag == "Player")
+        {
+            other.GetComponent<nhanvat>().TakeHit();
+        }
+        if (colliderName == "sight" && other.tag == "Player")
+        {
+            if (target == null)
+            {
+                this.target = other.transform;
+            }
+        }
+    }
+
+    public void CollisionExit(string colliderName, GameObject other)
+    {
+        if(colliderName == "sight" && other.tag == "Player")
+        {
+            target = null;
+        }
+    }
+
+    public void TakeHit()
+    {
+        Debug.Log("I took at hit");
     }
 }

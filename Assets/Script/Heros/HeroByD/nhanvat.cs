@@ -150,4 +150,9 @@ public class nhanvat : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void TakeHit()
+    {
+        Debug.Log("Hurt");
+    }
 }
