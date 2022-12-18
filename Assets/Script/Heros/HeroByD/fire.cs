@@ -34,7 +34,7 @@ public class fire : MonoBehaviour
 
     public void removeForce()
     {
-        myBody.velocity = new Vector2(0, 0);
+        //myBody.velocity = new Vector2(0, 0);
         Destroy(fire01);
 
     }
