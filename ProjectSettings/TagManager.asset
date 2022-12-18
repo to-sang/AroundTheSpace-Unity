@@ -6,6 +6,9 @@ TagManager:
   tags:
   - NenDat
   - Monter
+  - enemy
+  - LavaMap
+  - trap
   layers:
   - Default
   - TransparentFX
