@@ -172,8 +172,9 @@ MonoBehaviour:
   vantoc: 7
   chamdat: 1
   hp: 100
+  maxHealth: 100
   gunTip: {fileID: 6828411141846667394}
-  bullet: {fileID: 4837393131667019588, guid: d0eeeac41cf38f8419e7cdb312212dc6, type: 3}
+  bullet: {fileID: 3290810393872171188, guid: 66b3ddf277957444884c95ff12b8bf53, type: 3}
 --- !u!58 &6828411141423615536
 CircleCollider2D:
   m_ObjectHideFlags: 0

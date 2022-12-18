@@ -14,7 +14,7 @@ public class nhanvat : MonoBehaviour
     private float roixuong = 10; // luc hap dan
     private bool quayphai = true; // kieerm tra xem nhan vat di huong nao
     public float maxHealth = 100;
-    float currentHealth = 0;
+    float currentHealth;
     // khai báo các biến để bắn
     public Transform gunTip;
     public GameObject bullet;
