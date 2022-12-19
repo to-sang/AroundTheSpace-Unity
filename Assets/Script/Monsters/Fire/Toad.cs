@@ -22,10 +22,16 @@ public class Toad : MonoBehaviour,ICollisionHandler,IHitable
 
     private float timeSinceAttack;
 
+    private bool alive = true;
+
     private void Update()
     {
-        lookAtTarget();
-        attack();
+        if (alive)
+        {
+            lookAtTarget();
+            attack();
+        }
+        
     }
     public void StopAttack()
     {
@@ -94,8 +100,15 @@ public class Toad : MonoBehaviour,ICollisionHandler,IHitable
         }
     }
 
+    private void Die()
+    {
+        alive = false;
+        animator.SetTrigger("die");
+        
+    }
     public void TakeHit()
     {
-        Debug.Log("I took at hit");
+        Die();
+        Destroy(gameObject);
     }
 }

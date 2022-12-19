@@ -1,11 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
-public class BatMove : MonoBehaviour
+public class Bat : MonoBehaviour, ICollisionHandler
 {
     public float vanTocVat;
     public bool diChuyenLen = true;
+
+    private Transform target;
+
+    public void CollisionEnter(string colliderName, GameObject other)
+    {
+        if (colliderName == "damageArea" && other.tag == "Player")
+        {
+            other.GetComponent<nhanvat>().TakeHit();
+        }
+        if (colliderName == "sight" && other.tag == "Player")
+        {
+            if (target == null)
+            {
+                this.target = other.transform;
+            }
+        }
+    }
+
+    public void CollisionExit(string colliderName, GameObject other)
+    {
+        if (colliderName == "sight" && other.tag == "Player")
+        {
+            target = null;
+        }
+    }
 
     private void FixedUpdate()
     {
