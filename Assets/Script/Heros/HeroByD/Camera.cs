@@ -5,10 +5,10 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
     private Transform player;
-    private float minX = -5; 
-    private float maxX = 130;
-    private float minY = -18;
-    private float maxY = 5;
+    [SerializeField] private float minX;
+    [SerializeField] private float maxX;
+    [SerializeField] private float minY;
+    [SerializeField] private float maxY;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,10 +23,10 @@ public class Camera : MonoBehaviour
             Vector3 vitri = transform.position;
             vitri.x = player.position.x;
             if(vitri.x < minX)
-                vitri.x = -5;
+                vitri.x = minX;
             if(vitri.x > maxX)
                 vitri.x = maxX;
-            vitri.y = player.position.y;
+            vitri.y = player.position.y + 1;
             if (vitri.y < minY)
                 vitri.y = minY;
             if (vitri.y > maxY)
