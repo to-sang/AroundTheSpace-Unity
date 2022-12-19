@@ -63841,7 +63841,7 @@ Transform:
   m_Father: {fileID: 756531541}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &602735954 stripped
+--- !u!4 &491225484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6892431439193751654, guid: ade1bb93dfeebf241af85e0a9e3d7fcc, type: 3}
   m_PrefabInstance: {fileID: 6892431439666464052}
@@ -63887,7 +63887,7 @@ Transform:
   - {fileID: 1300365905}
   - {fileID: 1016393962}
   - {fileID: 409487972}
-  - {fileID: 602735954}
+  - {fileID: 491225484}
   - {fileID: 607964965}
   - {fileID: 164606862}
   - {fileID: 1455590351}
@@ -75280,6 +75280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
+    - target: {fileID: 6892431439193751653, guid: ade1bb93dfeebf241af85e0a9e3d7fcc, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6892431439193751654, guid: ade1bb93dfeebf241af85e0a9e3d7fcc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -75323,6 +75327,10 @@ PrefabInstance:
     - target: {fileID: 6892431439193751654, guid: ade1bb93dfeebf241af85e0a9e3d7fcc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892431439362710040, guid: ade1bb93dfeebf241af85e0a9e3d7fcc, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6892431439362710041, guid: ade1bb93dfeebf241af85e0a9e3d7fcc, type: 3}
       propertyPath: m_LocalPosition.x

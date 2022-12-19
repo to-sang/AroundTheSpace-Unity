@@ -109,6 +109,7 @@ public class Toad : MonoBehaviour,ICollisionHandler,IHitable
     public void TakeHit()
     {
         Die();
-        Destroy(gameObject);
+        Destroy(gameObject, 1);
     }
+
 }
