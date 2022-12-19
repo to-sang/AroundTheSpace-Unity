@@ -1025,9 +1025,10 @@ GameObject:
   - component: {fileID: 735971631}
   - component: {fileID: 735971633}
   - component: {fileID: 735971634}
+  - component: {fileID: 735971635}
   m_Layer: 0
   m_Name: toad
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1138,6 +1139,27 @@ MonoBehaviour:
   animator: {fileID: 735971633}
   toadbullet: {fileID: 3750786974709238844, guid: 2d78fc3feed75204daf4bb28157ae8e1, type: 3}
   shootPoint: {fileID: 1289186600}
+--- !u!50 &735971635
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735971630}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &813528335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 810967571888749576, guid: 1bf6f0af29e082342acac2b9b29fa052, type: 3}
@@ -10340,6 +10362,10 @@ PrefabInstance:
       propertyPath: vantoc
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6828411141423615541, guid: 7affdec2bb1b5214684023d6276ffbe3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6828411141423615543, guid: 7affdec2bb1b5214684023d6276ffbe3, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -10472,5 +10498,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bat
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 190048280222034542, guid: 5bfce7a60d0a4f1449992eff5c519ea2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647284164294471548, guid: 5bfce7a60d0a4f1449992eff5c519ea2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 190048280222034542, guid: 5bfce7a60d0a4f1449992eff5c519ea2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5bfce7a60d0a4f1449992eff5c519ea2, type: 3}
