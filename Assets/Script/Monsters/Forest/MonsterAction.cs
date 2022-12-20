@@ -5,7 +5,6 @@ using UnityEngine;
 public class MonsterAction : MonoBehaviour
 {
     public float vanTocVat;
-    public int hp = 100;
     public bool right = false;
     private Animator hd;
     float fireRate = 0.5f;
@@ -15,17 +14,27 @@ public class MonsterAction : MonoBehaviour
     private Rigidbody2D rigidbody2d;
     Vector2 Dichuyen;
     Vector2 chuyenhuong;
+    public float timeDelayDie;
+    monsterHealth monsterHealth;
 
-
+    // dame khi va chamj voiws quasi vatj
+    public int dameFromBodyMonster;
+    float dameRate = 3f; // thoiwf gian nhaanj dame luot tiep theo
+    public float pushBack; // luc bat nguoc lai khi va cham voi monster
+    float nextDame; //thoiwf gian nhaanj dame luot tiep theo
     void Start()
     {
         hd = GetComponent<Animator>();
         Dichuyen = transform.position;  
         chuyenhuong = transform.localScale;
+        monsterHealth = GetComponent<monsterHealth>();
+
+        nextDame = 0f;
     }
     private void Update()
     {
-        hd.SetBool("right", right);
+         hd.SetBool("right", right);
+        hd.SetInteger("hp", monsterHealth.currentHealth);
     }
     private void FixedUpdate()
     {
@@ -40,7 +49,12 @@ public class MonsterAction : MonoBehaviour
         transform.localPosition = Dichuyen;
         transform.localScale = chuyenhuong;
         //// chức năng bắn
-        if (Time.time % 2 == 0 && hp > 0)
+        if(monsterHealth.currentHealth < 1)
+        {
+            Dichuyen.x = rigidbody2d.position.x;
+        }
+
+        if (Time.time % 1.5 == 0 && monsterHealth.currentHealth > 0)
         {
             fireBullet();
         }
@@ -60,6 +74,13 @@ public class MonsterAction : MonoBehaviour
         }
         transform.localScale = chuyenhuong;
 
+        if(collision.gameObject.tag == "Player" && nextDame < Time.time)
+        {
+            nhanvat nv = collision.gameObject.GetComponent<nhanvat>();
+            nv.addDamage(dameFromBodyMonster);
+            nextDame = dameRate + Time.time;
+        }
+
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -72,6 +93,12 @@ public class MonsterAction : MonoBehaviour
             chuyenhuong.x *= -1;
             right = false;
            
+        }
+        if (collision.gameObject.tag == "Player" && nextDame < Time.time)
+        {
+            nhanvat nv = collision.gameObject.GetComponent<nhanvat>();
+            nv.addDamage(dameFromBodyMonster);
+            nextDame = dameRate + Time.time;
         }
         //transform.localScale = chuyenhuong;
     }

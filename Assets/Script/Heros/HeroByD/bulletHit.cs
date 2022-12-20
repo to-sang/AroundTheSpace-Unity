@@ -5,7 +5,7 @@ using UnityEngine;
 public class bulletHit : MonoBehaviour
 {
 
-    public float dame; 
+    public int dame; 
     fire myfire;
     public GameObject bulletExplosion;
 
@@ -31,7 +31,7 @@ public class bulletHit : MonoBehaviour
         {
             myfire.removeForce();
             Instantiate(bulletExplosion, transform.position, transform.rotation);
-            //Destroy(bulletExplosion);
+            Destroy(bulletExplosion);
             if(col.gameObject.layer == LayerMask.NameToLayer("enemy"))
             {
                 monsterHealth healthMonster = col.gameObject.GetComponent<monsterHealth>();

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterShoot : MonoBehaviour
 {
-    public float dame;
+    public int dame;
     fire myfire;
     public GameObject bulletExplosion;
 
