@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class nhanvat : MonoBehaviour
 {
@@ -13,14 +15,18 @@ public class nhanvat : MonoBehaviour
     private float nhaythap = 5; // asp dung khi nhan len 1 lan va buong phim
     private float roixuong = 10; // luc hap dan
     private bool quayphai = true; // kieerm tra xem nhan vat di huong nao
-    public float maxHealth = 100;
-    float currentHealth;
+    public int maxHealth = 100;
+    public int currentHealth;
     // khai báo các biến để bắn
     public Transform gunTip;
     public GameObject bullet;
     float fireRate = 0.5f;
     float nextFire = 0;
+    // thời gian delay trước khi gọi đến hàm destroy
+    public float timeDelayDie;
 
+    // các biến khai báo khi tại thanh máu cho player
+    public Slider playerHealthSlider;
 
     // Start is called before the first frame update
     private Animator hd;
@@ -31,7 +37,9 @@ public class nhanvat : MonoBehaviour
     {
         hd = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
-        currentHealth = hp;
+        currentHealth = maxHealth;
+        playerHealthSlider.maxValue = maxHealth;
+        playerHealthSlider.value = maxHealth;
     }
 
     // Update is called once per frame
@@ -39,7 +47,7 @@ public class nhanvat : MonoBehaviour
     {
         hd.SetFloat("tocdo", tocdo);
         hd.SetBool("chamdat", chamdat);
-        hd.SetInteger("hp", hp);
+        hd.SetInteger("hp", currentHealth);
         Nhay();
         if (transform.position.y < -30)
             transform.position = new Vector2(transform.position.x, 0);
@@ -52,6 +60,8 @@ public class nhanvat : MonoBehaviour
         {
             fireBullet();
         }
+        hd.SetInteger("hp", currentHealth);
+
     }
 
     // chuc nang ban dan
@@ -137,9 +147,10 @@ public class nhanvat : MonoBehaviour
     }
 
     // hàm gây dame cho nhân vật
-    public void addDamage(float dame)
+    public void addDamage(int dame)
     {
         currentHealth -= dame;
+        playerHealthSlider.value = currentHealth;
         if (currentHealth <= 0)
         {
             makeDead();
@@ -148,7 +159,7 @@ public class nhanvat : MonoBehaviour
     // cái chết cho player
     void makeDead()
     {
-        Destroy(gameObject);
+            Destroy(gameObject,timeDelayDie);
     }
 
     public void TakeHit()
