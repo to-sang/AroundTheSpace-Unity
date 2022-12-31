@@ -37,6 +37,16 @@ public class bulletHit : MonoBehaviour
                 monsterHealth healthMonster = col.gameObject.GetComponent<monsterHealth>();
                 healthMonster.addDamage(dame);
             }
+            else if (col.gameObject.layer == LayerMask.NameToLayer("enemy1"))
+            {
+                TakeDame takeDame = col.gameObject.GetComponent<TakeDame>();
+                takeDame.addDamage(dame);
+            }
+            else if (col.gameObject.layer == LayerMask.NameToLayer("enemy2"))
+            {
+                BatAction batAction = col.gameObject.GetComponent<BatAction>();
+                batAction.addDamage(dame);
+            }
         }
     }
     void OnTriggerStay2D(Collider2D col)
@@ -50,6 +60,16 @@ public class bulletHit : MonoBehaviour
             {
                 monsterHealth healthMonster = col.gameObject.GetComponent<monsterHealth>();
                 healthMonster.addDamage(dame);
+            }
+            else if (col.gameObject.layer == LayerMask.NameToLayer("enemy1"))
+            {
+                TakeDame takeDame = col.gameObject.GetComponent<TakeDame>();
+                takeDame.addDamage(dame);
+            }
+            else if (col.gameObject.layer == LayerMask.NameToLayer("enemy2"))
+            {
+                BatAction batAction = col.gameObject.GetComponent<BatAction>();
+                batAction.addDamage(dame);
             }
         }
     }

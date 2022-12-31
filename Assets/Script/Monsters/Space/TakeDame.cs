@@ -1,17 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
-public class TakeDame : MonoBehaviour, IHitable
+
+public class TakeDame : MonoBehaviour
 {
-    [SerializeField] private int maxHP;
     private Animator anim;
-    private int curHP;
     // Start is called before the first frame update
+    public int maxHealth = 100;
+    public int currentHealth = 0;
+    public float timeDelayDie;
+    // khai bao cac bien de tao thanh mau cho enemy
+    public Slider enemyHealthSlider;
     void Start()
     {
-        curHP = maxHP;
+        currentHealth = maxHealth;
+        enemyHealthSlider.maxValue = maxHealth;
+        enemyHealthSlider.value = maxHealth;
         anim = GetComponent<Animator>();
     }
 
@@ -20,14 +26,24 @@ public class TakeDame : MonoBehaviour, IHitable
     {
         
     }
+    public void addDamage(int dame)
+    {
 
-    private void Die()
+        currentHealth -= dame;
+        enemyHealthSlider.value = currentHealth;
+        if (currentHealth <= 0)
+        {
+            makeDead();
+        }
+    }
+    void makeDead()
+    {
+        Die();
+        Destroy(gameObject, timeDelayDie);
+    }
+    public void Die()
     {
         anim.SetBool("isDeath", true);
     }
-    public void TakeHit()
-    {
-        Die();
-        Destroy(gameObject, 1);
-    }
+    
 }
