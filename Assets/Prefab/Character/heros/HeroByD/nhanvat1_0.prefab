@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 6828411141423615542}
   - component: {fileID: 6828411141423615537}
   - component: {fileID: 6828411141423615536}
-  m_Layer: 0
+  - component: {fileID: 532301194}
+  m_Layer: 8
   m_Name: nhanvat1_0
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6828411141423615547}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.02, y: -0.989, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1032846840, guid: cf0507920cdeeba429683914b5e15bba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -103,7 +104,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0042266846, y: 0.017736971}
+  m_Offset: {x: -0.08484268, y: -0.0539338}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -114,7 +115,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3082314, y: 1.3302051}
+  m_Size: {x: 0.5750599, y: 1.1868635}
   m_EdgeRadius: 0
 --- !u!50 &6828411141423615546
 Rigidbody2D:
@@ -169,12 +170,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb2bff7ee56df24094183a60ce4f8b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vantoc: 7
+  vantoc: 5
   chamdat: 1
-  hp: 100
   maxHealth: 100
+  currentHealth: 0
   gunTip: {fileID: 6828411141846667394}
   bullet: {fileID: 3290810393872171188, guid: 66b3ddf277957444884c95ff12b8bf53, type: 3}
+  timeDelayDie: 1
+  playerHealthSlider: {fileID: 0}
 --- !u!58 &6828411141423615536
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -188,9 +191,35 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.66}
+  m_Offset: {x: 0, y: -0.648}
   serializedVersion: 2
   m_Radius: 0.1
+--- !u!61 &532301194
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6828411141423615547}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.079857826, y: -0.04392165}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.29, y: 1.37}
+    newSize: {x: 1.34, y: 1.53}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.66711044, y: 1.1863276}
+  m_EdgeRadius: 0
 --- !u!1 &6828411141846667395
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6828411141846667394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gunTip
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}

@@ -30,12 +30,13 @@ public class nhanvat : MonoBehaviour
     // Start is called before the first frame update
     private Animator hd;
     private Rigidbody2D rigidbody2d;
-
+    private AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
         hd = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        audio = GetComponent<AudioSource>();
         currentHealth = maxHealth;
         playerHealthSlider.maxValue = maxHealth;
         playerHealthSlider.value = maxHealth;
@@ -58,6 +59,7 @@ public class nhanvat : MonoBehaviour
         if (Input.GetAxisRaw("Fire1") > 0)
         {
             fireBullet();
+            TaoAmThanh("fire");
         }
         hd.SetInteger("hp", currentHealth);
 
@@ -67,7 +69,7 @@ public class nhanvat : MonoBehaviour
 
     void fireBullet()
     {
-        if(Time.time > nextFire)
+        if (Time.time > nextFire)
         {
             nextFire = Time.time+ fireRate;
             if (quayphai)
@@ -91,7 +93,7 @@ public class nhanvat : MonoBehaviour
             huongNV();
         if (phimtraiphai < 0 && quayphai)
             huongNV();
-
+        
     }
     void huongNV()
     {
@@ -105,6 +107,7 @@ public class nhanvat : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && chamdat == true)
         {
             rigidbody2d.AddForce((Vector2.up) * nhaycao);
+            TaoAmThanh("jump");
             chamdat = false;
         }
         // asp dung trong luc cho nhan vat
@@ -153,5 +156,10 @@ public class nhanvat : MonoBehaviour
     public void TakeHit()
     {
         Debug.Log("Hurt");
+    }
+
+    public void TaoAmThanh(string File)
+    {
+        audio.PlayOneShot(Resources.Load<AudioClip>("Sound/" + File));
     }
 }
