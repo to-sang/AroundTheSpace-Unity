@@ -37,6 +37,7 @@ public class monsterHealth : MonoBehaviour
 
     void makeDead()
     {
+
         Destroy(gameObject,timeDelayDie);
     }
 }

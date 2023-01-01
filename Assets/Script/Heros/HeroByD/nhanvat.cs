@@ -9,8 +9,7 @@ public class nhanvat : MonoBehaviour
     public float vantoc = 7; // van toc cua nha vat
     private float tocdo = 0; // doc do cua nha vat
     public bool chamdat = true; // kiểm tra nv có ở dưới đất không
-    private bool chuyenhuong = false; // kiểm tra nv có chuyển huonngws không
-    public int hp = 100;
+
     private float nhaycao = 500;
     private float nhaythap = 5; // asp dung khi nhan len 1 lan va buong phim
     private float roixuong = 10; // luc hap dan
@@ -100,18 +99,7 @@ public class nhanvat : MonoBehaviour
         Vector2 huongquay = transform.localScale;
         huongquay.x *= -1;
         transform.localScale = huongquay;
-        if (tocdo > 1)
-        {
-            StartCoroutine(ChuyenHuong()); // thuc hien quay dau
-        }
     }
-    IEnumerator ChuyenHuong()
-    {
-        chuyenhuong = true;
-        yield return new WaitForSeconds(0.2f);
-        chuyenhuong = false;
-    }
-
     void Nhay()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow) && chamdat == true)
