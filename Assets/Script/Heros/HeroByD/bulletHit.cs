@@ -8,7 +8,6 @@ public class bulletHit : MonoBehaviour
     public int dame; 
     fire myfire;
     public GameObject bulletExplosion;
-
     private void Awake()
     {
         myfire = GetComponent<fire>();
@@ -16,7 +15,7 @@ public class bulletHit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

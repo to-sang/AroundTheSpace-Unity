@@ -35,9 +35,8 @@ public class monsterHealth : MonoBehaviour
         }
     }
 
-    void makeDead()
+    public void makeDead()
     {
-
         Destroy(gameObject,timeDelayDie);
     }
 }
