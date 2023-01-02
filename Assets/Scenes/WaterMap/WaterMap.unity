@@ -6451,7 +6451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921622948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.08, y: 2.9, z: -10}
+  m_LocalPosition: {x: 1.29, y: 2.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6471,10 +6471,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69f69497dd43ce40956fa2a328e3293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: 5
-  maxX: 105
-  minY: -5
-  maxY: 10
+  minX: 1
+  maxX: 92.9
+  minY: 0
+  maxY: 6
 --- !u!1001 &927610791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6685,7 +6685,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9d88d87c1115ebb4ebcddbb55b910f57, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -7462,7 +7462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507733442472804931, guid: 3ccc49741760fe54a80bd05d63b686f2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -12.87
+      value: -9.08
       objectReference: {fileID: 0}
     - target: {fileID: 5507733442472804931, guid: 3ccc49741760fe54a80bd05d63b686f2, type: 3}
       propertyPath: m_AnchoredPosition.y
