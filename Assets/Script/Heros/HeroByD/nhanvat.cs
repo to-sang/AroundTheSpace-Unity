@@ -59,7 +59,6 @@ public class nhanvat : MonoBehaviour
         if (Input.GetAxisRaw("Fire1") > 0)
         {
             fireBullet();
-            TaoAmThanh("fire");
         }
         hd.SetInteger("hp", currentHealth);
 
@@ -71,6 +70,8 @@ public class nhanvat : MonoBehaviour
     {
         if (Time.time > nextFire)
         {
+            Sound("gunsound2");
+
             nextFire = Time.time+ fireRate;
             if (quayphai)
             {
@@ -86,14 +87,23 @@ public class nhanvat : MonoBehaviour
 
     void DiChuyen()
     {
+        
         float phimtraiphai = Input.GetAxis("Horizontal");
+        if(phimtraiphai != 0)
+        {
+            Sound("runnew");
+        }
         rigidbody2d.velocity = new Vector2(vantoc * phimtraiphai, rigidbody2d.velocity.y);
         tocdo = Mathf.Abs(vantoc * phimtraiphai);
         if (phimtraiphai > 0 && !quayphai)
+        {
             huongNV();
+        }
+            
         if (phimtraiphai < 0 && quayphai)
+        {
             huongNV();
-        
+        }     
     }
     void huongNV()
     {
@@ -107,7 +117,7 @@ public class nhanvat : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && chamdat == true)
         {
             rigidbody2d.AddForce((Vector2.up) * nhaycao);
-            TaoAmThanh("jump");
+            Sound("jump");
             chamdat = false;
         }
         // asp dung trong luc cho nhan vat
@@ -144,13 +154,15 @@ public class nhanvat : MonoBehaviour
         playerHealthSlider.value = currentHealth;
         if (currentHealth <= 0)
         {
+            Sound("die2");
             makeDead();
         }
     }
     // cái chết cho player
     void makeDead()
     {
-            Destroy(gameObject,timeDelayDie);
+
+        Destroy(gameObject,timeDelayDie);
     }
 
     public void TakeHit()
@@ -158,7 +170,7 @@ public class nhanvat : MonoBehaviour
         Debug.Log("Hurt");
     }
 
-    public void TaoAmThanh(string File)
+    public void Sound(string File)
     {
         audio.PlayOneShot(Resources.Load<AudioClip>("Sound/" + File));
     }
