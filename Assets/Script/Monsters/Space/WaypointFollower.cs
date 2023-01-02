@@ -19,7 +19,7 @@ public class WaypointFollower : MonoBehaviour
             if (currentWaypointIndex >= waypoints.Length)
             {
                 currentWaypointIndex = 0;
-                transform.localScale = new Vector2(-1, 1);
+                transform.localScale = new Vector2(transform.localScale.x*-1, transform.localScale.y);
             }
         }
         transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypointIndex].transform.position,Time.deltaTime * speed);
