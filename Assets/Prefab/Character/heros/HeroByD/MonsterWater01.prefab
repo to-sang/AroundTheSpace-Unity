@@ -356,7 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  timeDelayDie: 1.5
+  timeDelayDie: 1.2
   enemyHealthSlider: {fileID: 4518685186832874969}
 --- !u!114 &4518685187618468501
 MonoBehaviour:

@@ -9,7 +9,7 @@ public class monsterHealth : MonoBehaviour
     public float timeDelayDie;
     // khai bao cac bien de tao thanh mau cho enemy
     public Slider enemyHealthSlider;
-
+    private AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
