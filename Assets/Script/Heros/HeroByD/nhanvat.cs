@@ -172,6 +172,6 @@ public class nhanvat : MonoBehaviour
 
     public void Sound(string File)
     {
-        audio.PlayOneShot(Resources.Load<AudioClip>("Sound/" + File));
+        //audio.PlayOneShot(Resources.Load<AudioClip>("Sound/" + File));
     }
 }
