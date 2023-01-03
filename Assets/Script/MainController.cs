@@ -7,7 +7,7 @@ public class MainController : MonoBehaviour
     // Start is called before the first frame update
     public void playGameButton()
     {
-        SceneManager.LoadScene("playGameScene");
+        SceneManager.LoadScene("Intro");
     }
     void Start()
     {

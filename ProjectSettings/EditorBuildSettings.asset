@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpaceMap/SpaceMap.unity
     guid: cb1fa69d95fe73847a8dcfe70e55513d
+  - enabled: 1
+    path: Assets/Scenes/Main/Intro.unity
+    guid: 56455c864d43d9948bea7748d4837606
   m_configObjects: {}
