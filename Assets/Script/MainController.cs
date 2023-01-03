@@ -17,7 +17,6 @@ public class MainController : MonoBehaviour
         Sound("click_effect");
         StartCoroutine(TypeLine());
         SceneManager.LoadScene("Intro");
-
     }
     void Start()
     {
@@ -30,6 +29,7 @@ public class MainController : MonoBehaviour
     }
     private void Sound(string File)
     {
+
         Debug.Log(Resources.Load<AudioClip>("Sound/" + File).name);
         audio.PlayOneShot(Resources.Load<AudioClip>("Sound/" + File));
     }
