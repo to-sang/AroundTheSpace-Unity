@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 6828411141423615536}
   - component: {fileID: 532301194}
   - component: {fileID: 986258274}
+  - component: {fileID: 1439740390294939331}
   m_Layer: 8
   m_Name: nhanvat1_0
   m_TagString: Player
@@ -179,6 +180,7 @@ MonoBehaviour:
   bullet: {fileID: 3290810393872171188, guid: 66b3ddf277957444884c95ff12b8bf53, type: 3}
   timeDelayDie: 1
   playerHealthSlider: {fileID: 0}
+  respawn: []
 --- !u!58 &6828411141423615536
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -317,6 +319,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1439740390294939331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6828411141423615547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60fd4ea2a50d5c479f87c884dfb0e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6828411141846667395
 GameObject:
   m_ObjectHideFlags: 0

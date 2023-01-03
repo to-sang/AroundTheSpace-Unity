@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -33,6 +34,11 @@ public class TakeDame : MonoBehaviour
         enemyHealthSlider.value = currentHealth;
         if (currentHealth <= 0)
         {
+            Debug.Log(transform.name);
+            if (transform.name == "Boss")
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
             makeDead();
         }
     }
