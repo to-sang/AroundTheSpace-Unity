@@ -12,7 +12,7 @@ public class nhanvat : MonoBehaviour
 
     private float nhaycao = 500;
     private float nhaythap = 5; // asp dung khi nhan len 1 lan va buong phim
-    private float roixuong = 10; // luc hap dan
+    private float roixuong = 5; // luc hap dan
     private bool quayphai = true; // kieerm tra xem nhan vat di huong nao
     public int maxHealth = 100;
     public int currentHealth;
@@ -20,6 +20,7 @@ public class nhanvat : MonoBehaviour
     public Transform gunTip;
     public GameObject bullet;
     float fireRate = 0.5f;
+    float runRate = 0.35f;
     float nextFire = 0;
     // thời gian delay trước khi gọi đến hàm destroy
     public float timeDelayDie;
@@ -89,9 +90,10 @@ public class nhanvat : MonoBehaviour
     {
         
         float phimtraiphai = Input.GetAxis("Horizontal");
-        if(phimtraiphai != 0)
+        if(phimtraiphai != 0 && Time.time > nextFire && vantoc >0)
         {
             Sound("runnew");
+            nextFire = Time.time + runRate;
         }
         rigidbody2d.velocity = new Vector2(vantoc * phimtraiphai, rigidbody2d.velocity.y);
         tocdo = Mathf.Abs(vantoc * phimtraiphai);
@@ -172,6 +174,6 @@ public class nhanvat : MonoBehaviour
 
     public void Sound(string File)
     {
-        //audio.PlayOneShot(Resources.Load<AudioClip>("Sound/" + File));
+        audio.PlayOneShot(Resources.Load<AudioClip>("Sound/" + File));
     }
 }
