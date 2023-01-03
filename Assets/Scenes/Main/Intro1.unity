@@ -390,8 +390,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: -200, y: -600}
+  m_AnchoredPosition: {x: 0, y: -175}
+  m_SizeDelta: {x: -200, y: -450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &377709169
 MonoBehaviour:
@@ -407,9 +407,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1842419074}
   lines:
-  - "Hello t\u1EA5t c\u1EA3 c\xE1c b\u1EA1n "
-  - "M\xECnh l\xE0 Ng\xF4 Ng\u1ECDc S\xE1ng"
-  - "M\xECnh l\xE0 Ng\xF4 Ng\u1ECDc S\xE1ng \u1ED1 \u1EC5 \u1EE1"
+  - "LyLy: Theo nh\u01B0 th\xF4ng tin t\xECnh b\xE1o ch\xFAng ta \u0111\u01B0\u1EE3c
+    \u1EE6y ban Li\xEAn minh v\u0169 tr\u1EE5 cung c\u1EA5p th\xEC hi\u1EC7n t\u1EA1i
+    c\u1EA3 4 h\xE0nh tinh Amazon, Flamas, Horas v\xE0 Neptune \u0111\u1EC1u \u0111\xE3
+    b\u1ECB b\u1ECDn b\u1EAFt c\xF3c ki\u1EC3m so\xE1t, t\xECnh h\xECnh \u0111ang
+    tr\u1EDF n\xEAn c\u1EF1c k\u1EF3 h\u1ED7n lo\u1EA1n. SaxSas n\xE0y, c\u1EADu
+    ngh\u0129 ch\xFAng ta n\xEAn \u0111i t\u1EDBi h\xE0nh tinh n\xE0o tr\u01B0\u1EDBc
+    ti\xEAn \u0111\xE2y. "
+  - "SaxSas: Ch\u1EC9 v\u1EDBi nhi\xEAu \u0111\xF3 th\xF4ng tin t\xECnh b\xE1o ch\xFAng
+    ta kh\xF3 c\xF3 th\u1EC3 x\xE1c \u0111\u1ECBnh \u0111\u01B0\u1EE3c t\xECnh h\xECnh
+    \u1EDF 4 h\xE0nh tinh kia. Nh\u01B0ng m\xE0 t\u1EDB ngh\u0129 ch\xFAng ta n\xEAn
+    t\u1EDBi Flamas tr\u01B0\u1EDBc."
+  - "LyLy: T\u1EA1i sao l\u1EA1i l\xE0 Flamas?"
+  - "SaxSas: B\u1EDFi v\xEC Flamas r\u1EA5t n\xF3ng. DaDa v\xE0 DuDu b\u1ECB b\u1EAFt
+    c\xF3c \u0111i khi m\xE0 kh\xF4ng c\xF3 gi\xE1p b\u1EA3o h\u1ED9. V\u1EDBi kh\xED
+    h\u1EADu c\u1EE7a Flamas h\u1ECD r\u1EA5t c\xF3 kh\u1EA3 n\u0103ng s\u1EBD g\u1EB7p
+    nguy hi\u1EC3m n\u1EBFu b\u1ECB b\u1EAFt t\u1EDBi Flamas."
+  - "LyLy: T\u1EDB c\u0169ng \u0111\u1ED3ng \xFD v\u1EDBi \xFD ki\u1EBFn c\u1EE7a
+    c\u1EADu. Flamas c\xF3 n\u1ED3ng \u0111\u1ED9 Oxi qu\xE1 th\u1EA5p, ch\xFAng
+    ta kh\xF3 m\xE0 c\xF3 th\u1EC3 s\u1ED1ng b\xECnh th\u01B0\u1EDDng \u1EDF \u0111\xF3
+    \u0111\u01B0\u1EE3c. S\u1EBD r\u1EA5t nguy hi\u1EC3m n\u1EBFu nh\u01B0 \u1EDF
+    Flamas qu\xE1 l\xE2u m\xE0 kh\xF4ng c\xF3 gi\xE1p b\u1EA3o h\u1ED9."
+  - "SaxSas: V\u1EADy quy\u1EBFt \u0111\u1ECBnh r\u1ED3i, ch\xFAng ta s\u1EBD t\u1EDBi
+    Flamas \u0111\u1EC3 t\xECm ng\u01B0\u1EDDi tr\u01B0\u1EDBc ti\xEAn. "
   speed: 0.1
 --- !u!114 &377709170
 MonoBehaviour:
