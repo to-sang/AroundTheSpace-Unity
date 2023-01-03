@@ -48,8 +48,9 @@ public class bulletHit : MonoBehaviour
             }
             else if (col.gameObject.layer == LayerMask.NameToLayer("boss"))
             {
-                BatAction batAction = col.gameObject.GetComponent<BatAction>();
-                batAction.addDamage(5);
+                dame = 10;
+                TakeDame takeDame = col.gameObject.GetComponent<TakeDame>();
+                takeDame.addDamage(dame);
             }
         }
     }
@@ -77,8 +78,9 @@ public class bulletHit : MonoBehaviour
             }
             else if (col.gameObject.layer == LayerMask.NameToLayer("boss"))
             {
-                BatAction batAction = col.gameObject.GetComponent<BatAction>();
-                batAction.addDamage(5);
+                dame = 10;
+                TakeDame takeDame = col.gameObject.GetComponent<TakeDame>();
+                takeDame.addDamage(dame);
             }
         }
     }
