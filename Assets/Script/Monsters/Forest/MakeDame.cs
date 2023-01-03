@@ -22,21 +22,21 @@ public class MakeDame : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if (collision.gameObject.tag == "Player" && nextDame < Time.time)
+        if (collider2D.gameObject.tag == "Player" && nextDame < Time.time)
         {
-            nhanvat nv = collision.gameObject.GetComponent<nhanvat>();
+            nhanvat nv = collider2D.gameObject.GetComponent<nhanvat>();
             nv.addDamage(dameFromBodyMonster);
             nextDame = dameRate + Time.time;
         }
 
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collider2D)
     {
-        if (collision.gameObject.tag == "Player" && nextDame < Time.time)
+        if (collider2D.gameObject.tag == "Player" && nextDame < Time.time)
         {
-            nhanvat nv = collision.gameObject.GetComponent<nhanvat>();
+            nhanvat nv = collider2D.gameObject.GetComponent<nhanvat>();
             nv.addDamage(dameFromBodyMonster);
             nextDame = dameRate + Time.time;
         }

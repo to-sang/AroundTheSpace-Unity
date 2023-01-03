@@ -22,6 +22,7 @@ public class nhanvat : MonoBehaviour
     float fireRate = 0.5f;
     float runRate = 0.35f;
     float nextFire = 0;
+    float nextRun = 0;
     // thời gian delay trước khi gọi đến hàm destroy
     public float timeDelayDie;
 
@@ -32,6 +33,7 @@ public class nhanvat : MonoBehaviour
     private Animator hd;
     private Rigidbody2D rigidbody2d;
     private AudioSource audio;
+    [SerializeField] private Vector2[] respawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,11 +64,21 @@ public class nhanvat : MonoBehaviour
             fireBullet();
         }
         hd.SetInteger("hp", currentHealth);
-
     }
 
     // chuc nang ban dan
-
+    void Respawn()
+    {
+        Vector2 vector = Vector2.zero;
+        foreach (Vector2 position in respawn) 
+        { 
+            if(transform.position.x >= position.x) { 
+                vector = position;
+            }    
+        }
+        transform.position = vector;
+        currentHealth = 100;
+    }
     void fireBullet()
     {
         if (Time.time > nextFire)
@@ -90,10 +102,10 @@ public class nhanvat : MonoBehaviour
     {
         
         float phimtraiphai = Input.GetAxis("Horizontal");
-        if(phimtraiphai != 0 && Time.time > nextFire && vantoc >0)
+        if(phimtraiphai != 0 && Time.time > nextRun && vantoc >0)
         {
+            nextRun = Time.time + runRate;
             Sound("runnew");
-            nextFire = Time.time + runRate;
         }
         rigidbody2d.velocity = new Vector2(vantoc * phimtraiphai, rigidbody2d.velocity.y);
         tocdo = Mathf.Abs(vantoc * phimtraiphai);
@@ -157,7 +169,10 @@ public class nhanvat : MonoBehaviour
         if (currentHealth <= 0)
         {
             Sound("die2");
-            makeDead();
+            new WaitForSeconds(1.2f);
+            Respawn();
+            //makeDead();
+
         }
     }
     // cái chết cho player

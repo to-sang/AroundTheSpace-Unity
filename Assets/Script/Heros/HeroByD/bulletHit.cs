@@ -46,6 +46,11 @@ public class bulletHit : MonoBehaviour
                 BatAction batAction = col.gameObject.GetComponent<BatAction>();
                 batAction.addDamage(dame);
             }
+            else if (col.gameObject.layer == LayerMask.NameToLayer("boss"))
+            {
+                BatAction batAction = col.gameObject.GetComponent<BatAction>();
+                batAction.addDamage(5);
+            }
         }
     }
     void OnTriggerStay2D(Collider2D col)
@@ -69,6 +74,11 @@ public class bulletHit : MonoBehaviour
             {
                 BatAction batAction = col.gameObject.GetComponent<BatAction>();
                 batAction.addDamage(dame);
+            }
+            else if (col.gameObject.layer == LayerMask.NameToLayer("boss"))
+            {
+                BatAction batAction = col.gameObject.GetComponent<BatAction>();
+                batAction.addDamage(5);
             }
         }
     }
