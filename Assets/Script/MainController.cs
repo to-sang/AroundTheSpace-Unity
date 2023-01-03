@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,9 @@ public class MainController : MonoBehaviour
     public void playGameButton()
     {
         Sound("click_effect");
-        //SceneManager.LoadScene("Intro");
+        StartCoroutine(TypeLine());
+        SceneManager.LoadScene("Intro");
+
     }
     void Start()
     {
@@ -27,6 +30,11 @@ public class MainController : MonoBehaviour
     }
     private void Sound(string File)
     {
+        Debug.Log(Resources.Load<AudioClip>("Sound/" + File).name);
         audio.PlayOneShot(Resources.Load<AudioClip>("Sound/" + File));
+    }
+    IEnumerator TypeLine()
+    {
+            yield return new WaitForSeconds(1f);
     }
 }
