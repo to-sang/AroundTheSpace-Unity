@@ -16,7 +16,7 @@ public class MainController : MonoBehaviour
     {
         Sound("click_effect");
         StartCoroutine(TypeLine());
-        SceneManager.LoadScene("Intro");
+        SceneManager.LoadScene("tutorial");
     }
     void Start()
     {

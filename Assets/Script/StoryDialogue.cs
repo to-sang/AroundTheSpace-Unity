@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class StoryDialogue : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class StoryDialogue : MonoBehaviour
     public float speed;
     private int index;
     private AudioSource audio;
+    [SerializeField] private string nextScene;
     // Start is called before the first frame update
     void Awake()
     {
@@ -34,6 +36,7 @@ public class StoryDialogue : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
+                SceneManager.LoadScene(nextScene);
             }
         }
     }

@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main/MainMenu.unity
+    guid: 3fc343d16a79b0d468e2746e0c395fb4
+  - enabled: 1
+    path: Assets/Scenes/Main/tutorial.unity
+    guid: 2f22bfbb545ec5549a93e28af7345cbd
+  - enabled: 1
+    path: Assets/Scenes/Main/Intro.unity
+    guid: 56455c864d43d9948bea7748d4837606
+  - enabled: 1
     path: Assets/Scenes/FireMap/LavaScreen.unity
     guid: 3ab11663a460f0c41814d10bdbeb3c7e
   - enabled: 1
@@ -17,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpaceMap/SpaceMap.unity
     guid: cb1fa69d95fe73847a8dcfe70e55513d
+  - enabled: 1
+    path: Assets/Scenes/Main/Intro 1.unity
+    guid: f6c953cbf389dd44e99b26d4a4b12da9
   m_configObjects: {}

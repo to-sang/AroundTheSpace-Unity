@@ -388,10 +388,10 @@ RectTransform:
   m_Father: {fileID: 900594363}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: -200, y: -400}
+  m_AnchoredPosition: {x: 0, y: -448}
+  m_SizeDelta: {x: -200, y: 796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &377709169
 MonoBehaviour:
@@ -407,10 +407,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1842419074}
   lines:
-  - "Hello t\u1EA5t c\u1EA3 c\xE1c b\u1EA1n "
-  - "M\xECnh l\xE0 Ng\xF4 Ng\u1ECDc S\xE1ng"
-  - "M\xECnh l\xE0 Ng\xF4 Ng\u1ECDc S\xE1ng \u1ED1 \u1EC5 \u1EE1"
-  speed: 0.15
+  - "V\xE0o m\u1ED9t ng\xE0y \u0111\u1EB9p tr\u1EDDi, khi b\u1ED1n ng\u01B0\u1EDDi
+    b\u1EA1n DaDa, DuDu, LyLy v\xE0 SaxSas \u0111ang ch\u01A1i c\xF9ng nhau th\xEC
+    b\u1ED7ng nhi\xEAn t\u1EEB \u0111\xE2u \u0111\xF3 tr\xEAn b\u1EA7u tr\u1EDDi
+    b\u1ED7ng xu\u1EA5t hi\u1EC7n m\u1ED9t chi\u1EBFc UFO v\xE0 b\u1EAFt c\xF3c m\u1EA5t
+    DaDa v\xE0 DuDu \u0111i. Ch\u1EE9ng ki\u1EBFn hai ng\u01B0\u1EDDi b\u1EA1n th\xE2n
+    nh\u1EA5t b\u1ECB b\u1EAFt \u0111i ngay tr\u01B0\u1EDBc m\u1EB7t, LyLy v\xE0
+    SaxSas kh\xF4ng th\u1EC3 kh\xF4ng t\u1EE9c gi\u1EADn. V\xE0 v\xEC v\u1EADy h\u1ECD
+    quy\u1EBFt \u0111\u1ECBnh t\u1EDBi \u1EE6y b\u1EA3n Li\xEAn minh V\u0169 tr\u1EE5
+    \u0111\u1EC3 b\xE1o c\xE1o t\xECnh h\xECnh v\xE0 xin m\u1ED9t con t\xE0u v\u0169
+    tr\u1EE5 \u0111\u1EC3 ti\u1EBFn h\xE0nh t\xECm ki\u1EBFm DaDa v\xE0 DuDu. Ch\u1EC9
+    c\xF3 nh\u1EEFng ng\u01B0\u1EDDi thu\u1ED9c c\xE1c h\xE0nh tinh \u0111\xE3 k\xFD
+    k\u1EBFt hi\u1EC7p \u0111\u1ECBnh h\xF2a b\xECnh v\u1EDBi Tr\xE1i \u0110\u1EA5t
+    m\u1EDBi c\xF3 th\u1EC3 xu\u1EA5t hi\u1EC7n \u0111\u1ED9t ng\u1ED9t nh\u01B0
+    th\u1EBF nh\u1EDD c\u1ED5ng n\u0103ng l\u01B0\u1EE3ng kh\xF4ng gian Mega, v\xE0
+    hi\u1EC7n t\u1EA1i th\xEC Tr\xE1i \u0110\u1EA5t m\u1EDBi ch\u1EC9 k\xFD k\u1EBFt
+    hi\u1EC7p \u0111\u1ECBnh n\xE0y v\u1EDBi 4 h\xE0nh tinh \u0111\xF3 l\xE0: Amazon,
+    Flamas, Horas v\xE0 Neptune. V\xEC r\u1EA5t c\xF3 kh\u1EA3 n\u0103ng c\u1ED5ng
+    n\u0103ng l\u01B0\u1EE3ng kh\xF4ng gian Mega \u0111\xE3 b\u1ECB b\u1ECDn b\u1EAFt
+    c\xF3c ph\u1EE5c k\xEDch, LyLy v\xE0 SaxSas quy\u1EBFt \u0111\u1ECBnh s\u1EBD
+    \u0111i \u0111\u1EBFn 4 h\xE0nh tinh b\u1EB1ng t\xE0u v\u0169 tr\u1EE5 th\xF4ng
+    th\u01B0\u1EDDng, v\xE0 th\u1EBF l\xE0 h\xE0nh tr\xECnh \u0111i kh\u1EAFp v\u0169
+    tr\u1EE5 c\u1EE7a LyLy v\xE0 SaxSas b\u1EAFt \u0111\u1EA7u..."
+  speed: 0.1
+  nextScene: Intro
 --- !u!114 &377709170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -846,9 +866,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tutorial:
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 323b2d771b74f564d9db395bb0f55d16, type: 2}
   m_sharedMaterial: {fileID: 476681687574523648, guid: 323b2d771b74f564d9db395bb0f55d16, type: 2}
@@ -875,8 +893,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -911,7 +929,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -143.91898, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

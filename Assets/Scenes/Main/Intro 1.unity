@@ -407,31 +407,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1842419074}
   lines:
-  - "LyLy: Theo nh\u01B0 th\xF4ng tin t\xECnh b\xE1o ch\xFAng ta \u0111\u01B0\u1EE3c
-    \u1EE6y ban Li\xEAn minh v\u0169 tr\u1EE5 cung c\u1EA5p th\xEC hi\u1EC7n t\u1EA1i
-    c\u1EA3 4 h\xE0nh tinh Amazon, Flamas, Horas v\xE0 Neptune \u0111\u1EC1u \u0111\xE3
-    b\u1ECB b\u1ECDn b\u1EAFt c\xF3c ki\u1EC3m so\xE1t, t\xECnh h\xECnh \u0111ang
-    tr\u1EDF n\xEAn c\u1EF1c k\u1EF3 h\u1ED7n lo\u1EA1n. SaxSas n\xE0y, c\u1EADu
-    ngh\u0129 ch\xFAng ta n\xEAn \u0111i t\u1EDBi h\xE0nh tinh n\xE0o tr\u01B0\u1EDBc
-    ti\xEAn \u0111\xE2y. "
-  - "SaxSas: Ch\u1EC9 v\u1EDBi nhi\xEAu \u0111\xF3 th\xF4ng tin t\xECnh b\xE1o ch\xFAng
-    ta kh\xF3 c\xF3 th\u1EC3 x\xE1c \u0111\u1ECBnh \u0111\u01B0\u1EE3c t\xECnh h\xECnh
-    \u1EDF 4 h\xE0nh tinh kia. Nh\u01B0ng m\xE0 t\u1EDB ngh\u0129 ch\xFAng ta n\xEAn
-    t\u1EDBi Flamas tr\u01B0\u1EDBc."
-  - "LyLy: T\u1EA1i sao l\u1EA1i l\xE0 Flamas?"
-  - "SaxSas: B\u1EDFi v\xEC Flamas r\u1EA5t n\xF3ng. DaDa v\xE0 DuDu b\u1ECB b\u1EAFt
-    c\xF3c \u0111i khi m\xE0 kh\xF4ng c\xF3 gi\xE1p b\u1EA3o h\u1ED9. V\u1EDBi kh\xED
-    h\u1EADu c\u1EE7a Flamas h\u1ECD r\u1EA5t c\xF3 kh\u1EA3 n\u0103ng s\u1EBD g\u1EB7p
-    nguy hi\u1EC3m n\u1EBFu b\u1ECB b\u1EAFt t\u1EDBi Flamas."
-  - "LyLy: T\u1EDB c\u0169ng \u0111\u1ED3ng \xFD v\u1EDBi \xFD ki\u1EBFn c\u1EE7a
-    c\u1EADu. Flamas c\xF3 n\u1ED3ng \u0111\u1ED9 Oxi qu\xE1 th\u1EA5p, ch\xFAng
-    ta kh\xF3 m\xE0 c\xF3 th\u1EC3 s\u1ED1ng b\xECnh th\u01B0\u1EDDng \u1EDF \u0111\xF3
-    \u0111\u01B0\u1EE3c. S\u1EBD r\u1EA5t nguy hi\u1EC3m n\u1EBFu nh\u01B0 \u1EDF
-    Flamas qu\xE1 l\xE2u m\xE0 kh\xF4ng c\xF3 gi\xE1p b\u1EA3o h\u1ED9."
-  - "SaxSas: V\u1EADy quy\u1EBFt \u0111\u1ECBnh r\u1ED3i, ch\xFAng ta s\u1EBD t\u1EDBi
-    Flamas \u0111\u1EC3 t\xECm ng\u01B0\u1EDDi tr\u01B0\u1EDBc ti\xEAn."
+  - "???: Xin ch\xE0o 2 c\xF4 c\u1EADu, ta xin t\u1EF1 gi\u1EDBi thi\u1EC7u ta l\xE0
+    ph\xF9 th\u1EE7y c\u1EE7a v\u01B0\u01A1ng qu\u1ED1c Flamas - Clara, c\xF2n \u0111\xE2y
+    l\xE0 qu\u1ED1c v\u01B0\u01A1ng \u0111\xE1ng k\xEDnh c\u1EE7a ch\xFAng ta - Apolo. "
+  - "Apolo: R\u1EA5t c\u1EA3m \u01A1n s\u1EF1 gi\xFAp s\u1EE9c c\u1EE7a 2 v\u1ECB
+    chi\u1EBFn binh. N\u1EBFu kh\xF4ng c\xF3 c\xE1c v\u1ECB c\xF3 l\u1EBD Flamas
+    \u0111\xE3 b\u1ECB t\xE0n ph\xE1 nghi\xEAm tr\u1ECDng h\u01A1n nhi\u1EC1u do
+    s\u1EF1 xu\u1EA5t hi\u1EC7n c\u1EE7a b\u1ECDn b\u1EAFt c\xF3c kh\xF4ng gian."
+  - "LyLy: Kh\xF4ng c\xF3 g\xEC \u0111\xE2u, ch\xFAng t\xF4i ch\u1EC9 l\xE0 \u0111ang
+    \u0111i t\xECm b\u1EA1n c\u1EE7a m\xECnh th\xF4i. H\u1ECD c\u0169ng b\u1ECB nh\xF3m
+    b\u1EAFt c\xF3c kh\xF4ng gian b\u1EAFt \u0111i. Tuy nhi\xEAn th\xF4ng tin b\u1ECDn
+    ch\xFAng gi\u1EA5u qu\xE1 k\u1EF9 n\xEAn ch\xFAng t\xF4i kh\xF4ng bi\u1EBFt \u0111\u01B0\u1EE3c
+    v\u1ECB tr\xED ch\xEDnh x\xE1c c\u1EE7a b\u1ECDn ch\xFAng l\xE0 \u1EDF \u0111\xE2u
+    c\u1EA3."
+  - "Clara: Xin h\u1ECFi ng\u01B0\u1EDDi b\u1EA1n c\u1EE7a 2 v\u1ECB c\u0169ng l\xE0
+    ng\u01B0\u1EDDi Tr\xE1i \u0110\u1EA5t \u0111\xFAng kh\xF4ng? N\u1EBFu \u0111\xFAng
+    l\xE0 c\u1EADu ta th\xEC c\xF3 v\u1EBB t\xF4i c\xF3 manh m\u1ED1i v\u1EC1 \u0111\u1ECBa
+    \u0111i\u1EC3m c\u1EADu ta b\u1ECB b\u1EAFt \u0111i."
+  - "SaxSas: Th\u1EADt \u01B0??? V\u1EADy xin c\xF4 h\xE3y cho ch\xFAng t\xF4i bi\u1EBFt
+    c\u1EADu \u1EA5y \u0111ang \u1EDF \u0111\xE2u."
+  - "Clara: Th\u1EADt ra t\xF4i \u0111\xE3 nh\u1EADn \u0111\u01B0\u1EE3c \xE1m hi\u1EC7u
+    c\u1EE7a c\u1EADu \u1EA5y, tuy nhi\xEAn t\xF4i kh\xF4ng \u0111\u1EE7 s\u1EE9c
+    \u0111\u1EC3 c\u1EE9u c\u1EADu \u1EA5y ra, v\xEC v\u1EADy ch\u1EC9 c\xF3 th\u1EC3
+    tr\u01A1 m\u1EAFt nh\xECn b\u1ECDn ch\xFAng \u0111\u01B0a ng\u01B0\u1EDDi \u0111i.
+    Tr\u01B0\u1EDBc khi b\u1ECB \u0111\u01B0a \u0111i, c\u1EADu \u1EA5y \u0111\xE3
+    ch\u1EC9 cho ch\xFAng t\xF4i v\u1EC1 ph\xEDa chi\u1EBFc m\u1EB7t n\u1EA1 Oxi
+    v\xE0 b\u1ED9 \u0111\u1ED3 b\u01A1i..."
+  - "LyLy: \xDD c\u1EE7a c\xF4 l\xE0 c\u1EADu \u1EA5y \u0111ang \xE1m ch\u1EC9 t\u1EDBi
+    n\u01A1i \u0111\xF3 sao."
+  - "Clara: T\xF4i ngh\u0129 l\xE0 nh\u01B0 v\u1EADy, n\u1EBFu nh\u01B0 hai b\u1EA1n
+    \u0111\xE3 t\u1EDBi t\u1EEB Tr\xE1i \u0110\u1EA5t th\xEC ch\u1EA3 c\xF3 l\xFD
+    do g\xEC m\xE0 b\u1ECDn ch\xFAng l\u1EA1i quay l\u1EA1i \u0111\xF3 c\u1EA3. V\xEC
+    th\u1EBF ch\u1EC9 c\xF3 th\u1EC3 b\u1ECDn ch\xFAng \u0111ang \u0111i t\u1EDBi
+    n\u01A1i \u0111\xF3 m\xE0 th\xF4i."
+  - "SaxSas: R\u1ED1t cu\u1ED9c l\xE0 n\u01A1i \u0111\xF3 hai ng\u01B0\u1EDDi \u0111ang
+    n\xF3i t\u1EDBi l\xE0 \u0111\xE2u v\u1EADy???"
+  - "LyLy: C\u1EADu \u0111\xFAng l\xE0 n\xEAn h\u1ECDc l\u1EA1i \u0111\u1ECBa l\xFD
+    kh\xF4ng gian \u0111i. Ngo\xE0i Tr\xE1i \u0110\u1EA5t ra, h\xE0nh tinh duy nh\u1EA5t
+    c\xF3 nhi\u1EC1u n\u01B0\u1EDBc trong li\xEAn minh ch\xFAng ta ch\u1EC9 c\xF3
+    Neptune m\xE0 th\xF4i. "
+  - "SaxSas: \xC0 th\xEC ra l\xE0 h\xE0nh tinh d\u1EA7u \u0103n \u0111\xF3 sao."
+  - "LyLy: C\xE1i g\xEC m\xE0 h\xE0nh tinh d\u1EA7u \u0103n. \u0110\xF3 l\xE0 h\xE0nh
+    tinh c\u1EE7a n\u01B0\u1EDBc. "
+  - "SaxSas: V\u1EADy ch\xFAng ta c\xF2n ch\u1EA7n ch\u1EEB g\xEC n\u1EEFa, mau t\u1EDBi
+    h\xE0nh tinh d\u1EA7u \u0103n th\xF4i."
+  - "LyLy: Th\u1EADt l\xE0 h\u1EBFt n\xF3i n\u1ED5i v\u1EDBi c\u1EADu m\xE0."
   speed: 0.1
-  nextScene: LavaScreen
+  nextScene: WaterMap
 --- !u!114 &377709170
 MonoBehaviour:
   m_ObjectHideFlags: 0
